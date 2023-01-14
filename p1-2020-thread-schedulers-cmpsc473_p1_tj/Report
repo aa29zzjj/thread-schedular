@@ -1,0 +1,37 @@
+we use the semaphore.h library 
+
+function details:
+
+ThreadTask: task of the thread
+
+CreateTask: input the value into thread
+
+TaskListNode: Link list of Task. (TasklistNode)
+
+TaskQueue: Queue of Task (TaskReadyQueue, TaskQueue)
+
+LastP: get the last part of the TaskQueue
+
+Push: Equeue
+
+Front: return the firstnode in Tasklist 
+Pop: Dequeue
+
+GetAndDel: return the specific TaskQueue by thread id, and dequeue that thread in queue
+
+search_id: check whether the specific thread is in the queue, 1 = true, 0 = false
+
+SortByRemainingTime: for srtf, to sort the queue by the remaining time. short remaining_time get close to ready, long remaining_time close to back.
+
+SortByPriority: same as srtf, but is for PBS
+
+fcfs: for schedule_me, working in fcfs proccess
+srtf: for schedule_me, working in srtf proccess
+pbs: for schedule_me, working in pbs proccess
+mlfq: for schedule_me, workign in mlfq proccess
+
+variable explaination:
+return_time: global_time
+schedular_type: for FCFS, SRTF, PBS, MLFQ
+queue: thread queue
+spend[1024]: in binary(8,16,31,51), to determine what level for the specific id
